@@ -1,0 +1,33 @@
+[
+  {
+    "id": 1,
+    "posiljatelj": "Marko",
+    "sadrzaj": "Ej, kaj ima?"
+  },
+  {
+    "id": 2,
+    "posiljatelj": "Ana",
+    "sadrzaj": "Vidimo se sutra u 9!"
+  },
+  {
+    "id": 3,
+    "posiljatelj": "Ivan",
+    "sadrzaj": "Pošalji mi onaj dokument."
+  },
+  {
+    "id": 4,
+    "posiljatelj": "Lucija",
+    "sadrzaj": "Odličan posao na projektu!"
+  },
+  {
+    "id": 5,
+    "posiljatelj": "Petra",
+    "sadrzaj": "Zaboravio si laptop kod mene."
+  },
+  {
+    "id": 6,
+    "posiljatelj": "Antonio",
+    "sadrzaj": "Pozdrav iz nove datoteke!",
+    "created_at": "2025-10-28T13:05:53.396Z"
+  }
+]

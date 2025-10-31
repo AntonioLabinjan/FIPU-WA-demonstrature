@@ -1,6 +1,6 @@
 ---
 
-# FIPU Web aplikacije: kolokvij — **“Skladište”** (Datum: ____)
+# FIPU Web aplikacije: kolokvij — **Skladište** (Datum: ____)
 
 **Ime i prezime:** ____________
 **JMBAG:** ____________

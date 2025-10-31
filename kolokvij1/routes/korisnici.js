@@ -11,7 +11,6 @@ const __dirname = path.dirname(__filename);
 const korisniciFile = path.join(__dirname, "..", "data", "korisnici.json");
 const porukeFile = path.join(__dirname, "..", "data", "poruke.json");
 
-// Helper funkcije
 async function readKorisnici() {
   try {
     const data = await fs.readFile(korisniciFile, "utf-8");
@@ -30,7 +29,6 @@ async function readPoruke() {
   }
 }
 
-// GET /korisnici/:id/poruke – poruke korisnika
 router.get("/:id/poruke", async (req, res) => {
   try {
     const id = parseInt(req.params.id);
@@ -57,18 +55,15 @@ router.get("/:id/poruke", async (req, res) => {
 
     const { date_sort } = req.query;
 
-    // Ako je parametar poslan, provjeri je li valjan
     if (date_sort) {
       if (date_sort !== "asc" && date_sort !== "desc") {
         return res.status(400).json({ error: "Parametar date_sort mora biti 'asc' ili 'desc'" });
       }
 
-      // Ako postoji samo jedna poruka → nema dovoljno podataka za sortiranje
       if (korisnikovePoruke.length === 1) {
         return res.status(200).json({ poruka: "Nema dovoljno podataka za sortiranje" });
       }
 
-      // Ako više od jedne poruke → sortiraj
       if (date_sort === "asc") {
         korisnikovePoruke.sort((a, b) => new Date(a.created_at) - new Date(b.created_at));
       } else if (date_sort === "desc") {
@@ -76,7 +71,6 @@ router.get("/:id/poruke", async (req, res) => {
       }
     }
 
-    // Ako više od jedne poruke i date_sort nije poslan → vrati sve poruke
     res.status(200).json(korisnikovePoruke);
 
   } catch (err) {
@@ -86,3 +80,4 @@ router.get("/:id/poruke", async (req, res) => {
 
 
 export default router;
+

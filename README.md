@@ -1,3 +1,15 @@
+Repozitorij za demonstrature iz kolegija "Web-aplikacije"
+Fakultet Informatike u Puli
+
+Nositelj: doc. dr. sc. Nikola Tanković
+Asistent: Luka Blašković, mag. inf.
+Demonstrator: Antonio Labinjan, univ. bacc. inf.
+
+Akademska godina: 2025/26.
+
+
+Resursi (will be updated):
+
 - NotebookLM link: https://notebooklm.google.com/notebook/5e2a9e5a-7524-4e11-b3f7-68064a24d8d3
 # 🎥 Video Arhiva
 

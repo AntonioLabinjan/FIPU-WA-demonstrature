@@ -1,5 +1,3 @@
----
-
 # FIPU Web aplikacije: kolokvij — **Skladište** (Datum: ____)
 
 **Ime i prezime:** ____________
@@ -97,5 +95,3 @@ Predaja se vrši putem Google Forms poveznice.
 
 ---
 
-Želiš da ti ga napravim i u **PDF verziji s FIPU izgledom** (kao original “wa-mid”)?
-Mogu ti generirati i naslovnicu + formu za upis imena i potpisa.

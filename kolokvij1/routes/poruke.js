@@ -11,7 +11,6 @@ const __dirname = path.dirname(__filename);
 
 const dataFile = path.join(__dirname, "..", "data", "poruke.json");
 
-// Helper funkcija za čitanje poruka iz datoteke
 async function readPoruke() {
   try {
     const data = await fs.readFile(dataFile, "utf-8");
@@ -21,7 +20,6 @@ async function readPoruke() {
   }
 }
 
-// Helper funkcija za pisanje poruka u datoteku
 async function writePoruke(poruke) {
   try {
     await fs.writeFile(dataFile, JSON.stringify(poruke, null, 2), "utf-8");
@@ -30,7 +28,6 @@ async function writePoruke(poruke) {
   }
 }
 
-// GET /poruke – vraća sve poruke ili filtrira po posiljatelju
 router.get("/", async (req, res) => {
   try {
     const poruke = await readPoruke();
@@ -56,7 +53,6 @@ router.get("/", async (req, res) => {
   }
 });
 
-// GET /poruke/:id – vraća pojedinu poruku
 router.get("/:id", async (req, res) => {
   try {
     const id = parseInt(req.params.id);
@@ -80,7 +76,6 @@ router.get("/:id", async (req, res) => {
   }
 });
 
-// POST /poruke – dodaje novu poruku
 router.post("/", async (req, res) => {
   try {
     const { id, posiljatelj, sadrzaj } = req.body;
@@ -113,6 +108,7 @@ router.post("/", async (req, res) => {
   }
 });
 
-// curl -X POST http://localhost:3000/poruke -H "Content-Type: application/json" -d "{\"posiljatelj\":\"Antonio\",\"sadrzaj\":\"Pozdrav iz routera!\"}"
+// curl -X POST http://localhost:3000/poruke -H "Content-Type: application/json" -d "{\"posiljatelj\":\"Antonio\",\"sadrzaj\":\"Pozdrav iz Pazina, Magla je!\"}"
 
 export default router;
+

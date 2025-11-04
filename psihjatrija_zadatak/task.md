@@ -115,10 +115,5 @@ psyhi-server/
 
 ---
 
-💡 **Bonus ideje:**
-
-* `GET /klinike/:id/uputnice` – dohvati sve uputnice za određenu kliniku
-* automatsko dodjeljivanje `id`-eva (npr. `nextId++`)
-* sortiranje klinika po broju pacijenata ili filtriranje po gradu
-
+Dodatno se poigrajte s opcijama filtriranja i sortiranja ako vam se da (svakako to morate znat, pa savjetujem da ponovite :D )
 ---

@@ -72,7 +72,7 @@ Svaka uputnica ima:
   * svi potrebni podaci moraju biti prisutni
   * `hitno` mora biti boolean
 * Ako nešto ne postoji → `404 Not Found`
-
+* naravno, svaku rutu popratite odgovarajućim statusnim kodovima za uspjeh i neuspjeh
 ---
 
 ## 📁 Struktura projekta

@@ -7,7 +7,7 @@
 Otišli ste u trgovinu i malo promatrali cijene. Odlučili ste ništa ne kupiti i samo otišli doma.
 Kad ste došli doma, upalili ste TV i taman naletili na prijenos sjednice Sabora.
 I sada...treba vam psihička pomoć. Nažalost, ne mogu vam pomoći, ali ako si složite malu lokalnu psihijatriju, možda ćete biti bolje.
-Trebatw izraditi Express poslužitelj koji simulira jednostavni sustav za **upravljanje psihijatrijskim klinikama i uputnicama pacijenata**.
+Trebate izraditi Express poslužitelj koji simulira jednostavni sustav za **upravljanje psihijatrijskim klinikama i uputnicama pacijenata**.
 Podaci se čuvaju *in-memory*, u poljima objekata.
 
 ---
@@ -118,5 +118,6 @@ psyhi-server/
 
 ---
 
-Dodatno se poigrajte s opcijama filtriranja i sortiranja ako vam se da (svakako to morate znat, pa savjetujem da ponovite :D )
+#### Dodatno se poigrajte s opcijama filtriranja i sortiranja ako vam se da (svakako to morate znat, pa savjetujem da ponovite :D )
+#### Budite kreativni
 ---

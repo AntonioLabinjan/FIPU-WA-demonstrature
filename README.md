@@ -15,3 +15,10 @@
 
 ##### 2025
 - **[31. listopada 2025. — Video demosa](https://youtu.be/bXk7NSBM61w)**
+
+TODO: napravit jedan updated, jednostavniji primjer kolokvija
+Bit ce samo WA1 i WA2 s vecim naglaskom na validaciju podataka koji dolaze iz HTTP requesta i poznavanje onih js funkcija za brže delanje tega:
+provjera duplikata zapisa, osnovne provjere tipova podataka (broj, string)
+provjere polja objekata... npr. provjera sadrži li svaki objekt točno određene ključeve i sl.
+Express Routing ostaje
+bez fs modula i ?params

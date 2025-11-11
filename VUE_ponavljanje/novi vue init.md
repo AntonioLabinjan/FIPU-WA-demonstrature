@@ -84,3 +84,8 @@ C:\Users\Korisnik\Desktop\journal-app>dir
 12.11.2025.  00:19               379 vite.config.js
                6 File(s)          2.636 bytes
                5 Dir(s)  132.260.057.088 bytes free
+
+
+
+INSTALACIJA RUTERA: npm install vue-router@4
+

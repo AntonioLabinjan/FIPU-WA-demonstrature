@@ -68,3 +68,14 @@ Ovim projektom ponovit ćemo osnove Vue.js-a, rad s komponentama, **v-model**, *
 - Koristite **props** za prijenos podataka iz parent u child.
 - Držite state (listu bilješki) u `App.vue` i šaljite ga dalje preko props.
 - Za routing koristite **vue-router**, `<router-link>` za navigaciju i `<router-view>` za prikaz komponenti.
+
+---
+## Preporučeni redoslijed da se ne pogubimo totalno
+1. Napraviti osnovni skeleton Vue projekta s `App.vue` i inicijalnim komponentama.  
+2. Dodati **JournalList** i prikaz prazne liste bilješki.  
+3. Napraviti **JournalForm** i omogućiti dodavanje novih bilješki u listu (state u `App.vue`).  
+4. Implementirati **brisanje bilješki** kroz dugme u **JournalItem** komponenti.  
+5. Dodati **uređivanje bilješki** i bindanje forme preko `v-model`.  
+6. Implementirati **brojanje bilješki** s computed property u `App.vue`.  
+7. Dodati **vue-router** i About page, te navigaciju između stranica.  
+8. (Bonus) Dodati filtriranje po datumu, LocalStorage, UI makeover i pop-upove.

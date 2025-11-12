@@ -79,3 +79,220 @@ Ovim projektom ponovit ćemo osnove Vue.js-a, rad s komponentama, **v-model**, *
 6. Implementirati **brojanje bilješki** s computed property u `App.vue`.  
 7. Dodati **vue-router** i About page, te navigaciju između stranica.  
 8. (Bonus) Dodati filtriranje po datumu, LocalStorage, UI makeover i pop-upove.
+
+
+
+# Vue.js Osnove za Journal App
+
+Ova kratka skripta pokriva sve ključne koncepte Vue.js potrebne za izradu Journal App.
+
+---
+
+## 1. Komponente
+
+- Vue aplikacija se sastoji od **komponenti**.
+- Svaka komponenta može imati:
+  - **template** → HTML
+  - **script** → logika, state, metode
+  - **style** → lokalni CSS
+
+```vue
+<template>
+  <h1>{{ title }}</h1>
+</template>
+
+<script setup>
+import { ref } from 'vue'
+const title = ref('Hello Vue!')
+</script>
+
+<style>
+h1 { color: blue; }
+</style>
+````
+
+---
+
+## 2. Props
+
+* **Props** služe za slanje podataka iz parent u child komponentu.
+
+```vue
+<script setup>
+const props = defineProps({
+  note: Object
+})
+</script>
+
+<template>
+  <p>{{ props.note.title }}</p>
+</template>
+```
+
+---
+
+## 3. Emit (eventi)
+
+* **Emit** služi da child komponenta pošalje događaj parentu.
+* Parent može "uhvatiti" event i pozvati funkciju.
+
+```vue
+<script setup>
+const emit = defineEmits(['delete-note'])
+const handleDelete = () => emit('delete-note', note.id)
+</script>
+
+<template>
+  <button @click="handleDelete">Delete</button>
+</template>
+```
+
+* Parent:
+
+```vue
+<JournalItem @delete-note="deleteNote" />
+```
+
+---
+
+## 4. Reactive state
+
+* Koristimo `ref()` za primitive i `reactive()` za objekte.
+* Vue automatski prati promjene i re-rendera template.
+
+```js
+import { ref } from 'vue'
+const notes = ref([])
+notes.value.push({ id: 1, title: 'Nova bilješka' })
+```
+
+---
+
+## 5. Computed properties
+
+* Za izračunavanje vrijednosti koje ovise o state-u.
+
+```js
+import { computed } from 'vue'
+const noteCount = computed(() => notes.value.length)
+```
+
+---
+
+## 6. Watch
+
+* Za "gledanje" promjena state-a i reagiranje na njih.
+
+```js
+import { watch } from 'vue'
+watch(notes, (newNotes) => {
+  localStorage.setItem('notes', JSON.stringify(newNotes))
+}, { deep: true })
+```
+
+---
+
+## 7. v-model
+
+* Koristi se za dvosmjerno bindanje input polja i state-a.
+
+```vue
+<input v-model="title" placeholder="Title" />
+```
+
+* Automatski update-a `title` kada korisnik piše i obrnuto.
+
+---
+
+## 8. v-for i key
+
+* Za iteraciju po listama.
+
+```vue
+<div v-for="note in notes" :key="note.id">
+  <JournalItem :note="note" />
+</div>
+```
+
+* **key** pomaže Vue-u da efikasno prati elemente.
+
+---
+
+## 9. Router
+
+* Za višestruke stranice (npr. Journal / About).
+
+```js
+import { createRouter, createWebHistory } from 'vue-router'
+import JournalPage from './views/JournalPage.vue'
+import AboutPage from './views/AboutPage.vue'
+
+const routes = [
+  { path: '/', component: JournalPage },
+  { path: '/about', component: AboutPage }
+]
+
+const router = createRouter({
+  history: createWebHistory(),
+  routes
+})
+```
+
+* U App.vue:
+
+```vue
+<nav>
+  <router-link to="/">Journal</router-link>
+  <router-link to="/about">About</router-link>
+</nav>
+<router-view />
+```
+
+---
+
+## 10. LocalStorage
+
+* Za pohranu podataka u browser.
+
+```js
+if (localStorage.getItem('notes')) {
+  notes.value = JSON.parse(localStorage.getItem('notes'))
+}
+
+watch(notes, (newNotes) => {
+  localStorage.setItem('notes', JSON.stringify(newNotes))
+}, { deep: true })
+```
+
+---
+
+## 11. Event Flow za Journal App
+
+* **JournalPage.vue** drži state `notes` i `noteToEdit`.
+* **JournalForm.vue**
+
+  * Props: `noteToEdit`
+  * Emit: `'add-note'`, `'update-note'`
+* **JournalList.vue**
+
+  * Props: `notes`
+  * Emit: `'delete-note'`, `'edit-note'` (propagira od JournalItem)
+* **JournalItem.vue**
+
+  * Props: `note`
+  * Emit: `'delete-note'`, `'edit-note'`
+
+---
+
+## 12. Tips & Tricks
+
+* Resetiraj forme nakon submit-a.
+* Koristi `computed` za filtriranje liste (po datumu).
+* Triggeraj pop-upove ili obavijesti putem reactive state-a.
+* Drži state u **parentu**, a child komponentama šalji samo props i evente.
+
+```
+
+
+```
+

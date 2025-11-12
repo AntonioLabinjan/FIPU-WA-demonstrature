@@ -291,5 +291,4 @@ watch(notes, (newNotes) => {
 * Triggeraj pop-upove ili obavijesti putem reactive state-a.
 * Drži state u **parentu**, a child komponentama šalji samo props i evente.
 
-```
 

@@ -293,6 +293,3 @@ watch(notes, (newNotes) => {
 
 ```
 
-
-```
-

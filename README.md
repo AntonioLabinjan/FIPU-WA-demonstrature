@@ -15,6 +15,7 @@
 
 ##### 2025
 - **[31. listopada 2025. — Video demosa](https://youtu.be/bXk7NSBM61w)**
+- **[6. studenog 2025. — Video demosa](https://youtu.be/Dxq9VT-DByc)**
 
 TODO: napravit jedan updated, jednostavniji primjer kolokvija
 Bit ce samo WA1 i WA2 s vecim naglaskom na validaciju podataka koji dolaze iz HTTP requesta i poznavanje onih js funkcija za brže delanje tega:

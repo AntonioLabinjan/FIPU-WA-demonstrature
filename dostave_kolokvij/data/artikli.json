@@ -1,0 +1,7 @@
+[
+  { "id": 1, "naziv": "Monitor", "kolicina": 10, "lokacija": "A1" },
+  { "id": 2, "naziv": "Tipkovnica", "kolicina": 25, "lokacija": "A2" },
+  { "id": 3, "naziv": "Miš", "kolicina": 40, "lokacija": "A3" },
+  { "id": 4, "naziv": "Laptop", "kolicina": 5, "lokacija": "B1" },
+  { "id": 5, "naziv": "Printer", "kolicina": 7, "lokacija": "B2" }
+]

@@ -21,3 +21,5 @@
 - **[22. studenog 2025. - Video demosa](https://youtu.be/Tv6vzAyZvoA)**
 - **[7. prosinca 2025. - Video demosa](https://youtu.be/EGadABS5nwM)**
 - **[11. prosinca 2025. - Video demosa](https://youtu.be/Jzc_MTm-Oz8)**
+- **[11. prosinca 2025. - Video demosa](https://youtube.com/shorts/BxYRkkF_eE4?si=7PiaqLp3g6YsKGW1)**
+- **[18. prosinca 2025. - Video demosa](https://youtu.be/K5s3CoaLR5A?si=36zas6TbIdJMoLf0)**

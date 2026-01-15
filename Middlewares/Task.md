@@ -1,5 +1,3 @@
----
-
 # BOXREC-SERVER — ExpressJS Middleware Zadatak
 
 ## Cilj zadatka

@@ -14,8 +14,8 @@
 ##### 🎥 Video Arhiva
 
 ##### 2025
-- **[31. listopada 2025. — Video demosa](https://youtu.be/bXk7NSBM61w)**
-- **[6. studenog 2025. — Video demosa](https://youtu.be/Dxq9VT-DByc)**
+- **[31. listopada 2025. - Video demosa](https://youtu.be/bXk7NSBM61w)**
+- **[6. studenog 2025. - Video demosa](https://youtu.be/Dxq9VT-DByc)**
 - **[13. studenog 2025. - Video demosa](https://youtu.be/xFN5enk6Nvs)**
 - **[20. studenog 2025. - Video demosa](https://youtu.be/0HAEbr7wpsM)**
 - **[22. studenog 2025. - Video demosa](https://youtu.be/Tv6vzAyZvoA)**

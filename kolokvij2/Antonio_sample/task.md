@@ -1,5 +1,3 @@
----
-
 # Primjer 2. kolokvija - Web aplikacije
 
 Prije početka pisanja kolokvija studenti su **dužni provjeriti** jesu li na računalu instalirani **Node.js, VS Code i Postman**. Umjesto Postmana moguće je koristiti VS Code ekstenziju Thunder Client ili neki drugi HTTP klijent.
